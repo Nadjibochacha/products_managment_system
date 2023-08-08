@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="crudspro.css">
+</head>
+<body id="body">
+    <div class="title">
+        <h1 name="title">Products Managment System</h1>
+        <h3 name="title">something for testing</h3>
+    </div>
+    <button id="dark" onclick="lightordark()">Dark Mode</button>
+    <section class="inputs">
+        <input type="text" name="input" id="" placeholder="TITLE" style="width: 100%;"><br>
+        <input type="number" name="input" id="" onkeyup="getTotal()" placeholder="PRICE">
+        <input type="number" name="input" id="" onchange="getTotal()" placeholder="TAXES">
+        <input type="number" name="input" id="" onchange="getTotal()" placeholder="ADS">
+        <input type="number" name="input" id="" onchange="getTotal()" placeholder="DISCOUNT">
+        <span id="finalprice">0</span><br>
+        <input type="number" name="input" id="" placeholder="COUNT" style="width: 100%;"><br>
+        <input type="text" name="input" id="" placeholder="CATEGORY" style="width: 100%;"><br>
+        <input type="submit" id="create"  value="Create" style="width: 100%;" onclick="createproduct()">
+    </section>
+    <section class="search">
+        <input type="search" name="input" id="search" placeholder="Search by title" style="width: 100%;"><br>
+        <input type="submit" onclick="searchelement(this.id)" id="titlepro" value="Search by title" style="width: 48%;">
+        <input type="submit" onclick="searchelement(this.id)" id="catigorypro" value="Search by Category" style="width: 48%;margin-left: 20px;">
+    </section>
+    <div class="delete">
+        
+    </div>
+    <section class="outputs">
+        <table>
+            <thead>
+                <th class="dark">ID</th>
+                <th class="dark">TITLE</th>
+                <th class="dark">PRICE</th>
+                <th class="dark">TAXES</th>
+                <th class="dark">ADS</th>
+                <th class="dark">DISCOUNT</th>
+                <th class="dark">COUNT</th>
+                <th class="dark">TOTAL</th>
+                <th class="dark">CATEGORY</th>
+                <th class="dark">UPDATE</th>
+                <th class="dark">DELETE</th>
+            </thead>
+            <tbody id="result">
+                
+            </tbody>
+        </table>
+    </section>
+
+    <script src="cruds.js"></script>
+</body>
+</html>
